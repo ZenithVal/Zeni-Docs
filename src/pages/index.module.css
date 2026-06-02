@@ -1,23 +1,64 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
-  padding: 4rem 0;
+  background: linear-gradient(180deg, var(--zeni-hero-bg), var(--ifm-background-color));
+  padding: 5rem 0 3rem;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.heroMascot {
+  width: 112px;
+  height: 112px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 14px 26px rgb(32 32 36 / 0.2));
 }
 
-.buttons {
+.heroTitle {
+  color: var(--ifm-font-color-base);
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  letter-spacing: -0.06em;
+  line-height: 0.95;
+  margin-bottom: 0.75rem;
+}
+
+.heroSubtitle {
+  color: var(--ifm-color-emphasis-700);
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  margin: 0;
+}
+
+.sectionButtons {
+  padding: 2.5rem 0 4rem;
+}
+
+.buttonGrid {
   display: flex;
-  align-items: center;
   justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.sectionButton {
+  align-items: center;
+  background: var(--zeni-card-bg);
+  border: 1px solid var(--zeni-border);
+  border-radius: 999px;
+  color: var(--ifm-font-color-base);
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  min-width: 180px;
+  padding: 0.85rem 1.25rem;
+  text-decoration: none;
+  transition: border-color 160ms ease, transform 160ms ease, background 160ms ease;
+}
+
+.sectionButton:hover {
+  background: var(--zeni-card-bg-hover);
+  border-color: var(--ifm-color-primary-dark);
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  transform: translateY(-1px);
 }

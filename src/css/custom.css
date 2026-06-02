@@ -1,30 +1,69 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #5f5f66;
+  --ifm-color-primary-dark: #55555c;
+  --ifm-color-primary-darker: #4f4f56;
+  --ifm-color-primary-darkest: #414148;
+  --ifm-color-primary-light: #73737a;
+  --ifm-color-primary-lighter: #7f7f86;
+  --ifm-color-primary-lightest: #9a9aa0;
+
+  --ifm-background-color: #f2f0ec;
+  --ifm-background-surface-color: #ebe8e3;
+  --ifm-font-color-base: #2d2d31;
+  --ifm-heading-color: #27272b;
+  --ifm-navbar-background-color: #e7e4de;
+  --ifm-footer-background-color: #e7e4de;
+  --ifm-code-background: #e5e2dc;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --zeni-border: #c9c4bb;
+  --zeni-card-bg: #ece9e4;
+  --zeni-card-bg-hover: #e2ded7;
+  --zeni-hero-bg: #e6e2db;
+
+  --docusaurus-highlighted-code-line-bg: rgba(45, 45, 49, 0.08);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #c5c3bd;
+  --ifm-color-primary-dark: #b5b2aa;
+  --ifm-color-primary-darker: #aaa79f;
+  --ifm-color-primary-darkest: #8d897f;
+  --ifm-color-primary-light: #d5d3ce;
+  --ifm-color-primary-lighter: #dfddd9;
+  --ifm-color-primary-lightest: #efeeeb;
+
+  --ifm-background-color: #18181a;
+  --ifm-background-surface-color: #222225;
+  --ifm-font-color-base: #dedbd3;
+  --ifm-heading-color: #ebe8e2;
+  --ifm-navbar-background-color: #202023;
+  --ifm-footer-background-color: #202023;
+  --ifm-code-background: #28282c;
+
+  --zeni-border: #3a3a40;
+  --zeni-card-bg: #222225;
+  --zeni-card-bg-hover: #2b2b2f;
+  --zeni-hero-bg: #202023;
+
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
+}
+
+.navbar,
+.footer {
+  border-color: var(--zeni-border);
+}
+
+.navbar {
+  border-bottom: 1px solid var(--zeni-border);
+}
+
+.footer {
+  border-top: 1px solid var(--zeni-border);
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
+.footer__copyright {
+  color: var(--ifm-color-emphasis-700);
 }

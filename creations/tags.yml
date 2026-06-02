@@ -1,0 +1,23 @@
+vrchat:
+  label: VRChat
+  description: VRChat related stuff
+
+unity:
+  label: Unity
+  description: Unity related stuff
+
+osc:
+  label: OSC
+  description: OSC related stuff  
+
+avatar:
+  label: Avatar Gimmicks
+  description: Avatar Shenanigans
+
+clothing:
+  label: Clothing
+  description: Clothing ~ usually booth releases
+
+oscpickup:
+  label: OSC Pickup
+  description: OSC Pickup information. Updates probably.

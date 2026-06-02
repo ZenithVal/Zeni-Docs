@@ -1,0 +1,8 @@
+{
+  "label": "OSC Pickup",
+  "position": 2,
+  "link": {
+    "type": "doc",
+    "id": "osc-pickup/overview"
+  }
+}

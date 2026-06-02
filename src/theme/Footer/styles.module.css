@@ -1,0 +1,31 @@
+.links {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  gap: 0.35rem 0.55rem;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.link,
+.mutedLink {
+  color: var(--ifm-footer-link-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--ifm-footer-link-hover-color);
+  text-decoration: underline;
+}
+
+.mutedLink {
+  color: var(--ifm-color-emphasis-600);
+}
+
+.separator {
+  color: var(--ifm-color-emphasis-500);
+  user-select: none;
+}
