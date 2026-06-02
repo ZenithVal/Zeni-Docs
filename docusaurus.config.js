@@ -11,10 +11,11 @@ const config = {
     v4: true,
   },
 
-  url: 'https://zenithval.github.io',
+  url: 'https://docs.zenithval.com',
   baseUrl: '/',
   organizationName: 'ZenithVal',
   projectName: 'zenithval.github.io',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
