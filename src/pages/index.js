@@ -155,7 +155,7 @@ function SectionButtons() {
 
 export default function Home() {
   return (
-    <Layout title="Home" description="ZenithVal's Site Woah" wrapperClassName="home-page">
+    <Layout title="Home" description="ZenithVal's creations, info, n' socials." wrapperClassName="home-page">
       <HomepageHeader />
     </Layout>
   );
