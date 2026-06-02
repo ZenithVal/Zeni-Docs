@@ -123,7 +123,6 @@ function HomepageHeader() {
           </Heading>
           <img className={styles.heroMascot} src="/img/zeni-excite.png" alt="Zeni" />
         </div>
-
         <div className={styles.introCard}>
           <p className={styles.aboutText}>
             Technical artist, modeler, kitbasher, and gimmick creator for VR Avatars.
@@ -131,6 +130,8 @@ function HomepageHeader() {
           <IconSection title="Socials" links={socialLinks} />
           <IconSection title="Work & Store" links={workLinks} />
         </div>
+        <SectionButtons /> 
+        <br/>
       </div>
     </header>
   );
@@ -154,11 +155,8 @@ function SectionButtons() {
 
 export default function Home() {
   return (
-    <Layout title="Home" description="ZenithVal's place for activities.">
+    <Layout title="Home" description="ZenithVal's Site Woah" wrapperClassName="home-page">
       <HomepageHeader />
-      <main>
-        <SectionButtons />
-      </main>
     </Layout>
   );
 }

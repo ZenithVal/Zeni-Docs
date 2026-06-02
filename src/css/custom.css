@@ -25,6 +25,9 @@
   --zeni-hero-bg: #e6e2db;
   --zeni-hero-text: #000000;
 
+  --zeni-hero-grid: rgba(35, 35, 38, 0.035);
+  --zeni-hero-grid-strong: rgba(35, 35, 38, 0.055);
+
   --docusaurus-highlighted-code-line-bg: rgba(45, 45, 49, 0.08);
 }
 
@@ -54,6 +57,9 @@
   --zeni-hero-bg: #202023;
   --zeni-hero-text: #f0eee9;
 
+  --zeni-hero-grid: rgba(255, 255, 255, 0.035);
+  --zeni-hero-grid-strong: rgba(255, 255, 255, 0.055);
+
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
 }
 
@@ -64,6 +70,7 @@
 
 .navbar {
   border-bottom: 1px solid var(--zeni-border);
+  background-color: var(--zeni-card-bg);
 }
 
 .footer {
