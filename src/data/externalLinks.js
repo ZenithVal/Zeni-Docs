@@ -1,27 +1,27 @@
 const externalLinks = [
   {
     label: 'Patreon',
-    href: 'https://www.patreon.com/c/notPumkin',
+    href: 'https://www.patreon.com/cw/ZenithVal',
   },
   {
     label: 'Booth',
-    href: '',
+    href: 'https://zenithval.booth.pm/',
   },
   {
     label: 'Twitter',
-    href: 'https://x.com/notpumkin',
+    href: 'https://x.com/ZenithVal',
   },
   {
     label: 'Bluesky',
-    href: 'https://bsky.app/profile/pumkin.bsky.social',
+    href: 'https://bsky.app/profile/zenithval.com',
   },
   {
     label: 'Twitch',
-    href: '',
+    href: 'https://www.twitch.tv/zenithval',
   },
   {
     label: 'Discord',
-    href: 'https://discord.gg/kZPYTCywYr',
+    href: 'https://discord.gg/Dpzkz4j4WW',
   },
   {
     label: 'Github',
@@ -29,7 +29,7 @@ const externalLinks = [
   },
   {
     label: 'Trello',
-    href: '',
+    href: 'https://trello.com/b/pUzEF0SZ/zens-work',
   },
 ];
 
