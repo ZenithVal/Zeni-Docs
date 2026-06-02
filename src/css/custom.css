@@ -16,6 +16,9 @@
   --ifm-code-background: #e5e2dc;
   --ifm-code-font-size: 95%;
 
+  --ifm-link-color: #2c76ff;
+  --ifm-link-hover-color: rgb(27, 153, 255);
+
   --zeni-border: #c9c4bb;
   --zeni-card-bg: #ece9e4;
   --zeni-card-bg-hover: #e2ded7;
@@ -40,6 +43,9 @@
   --ifm-navbar-background-color: #202023;
   --ifm-footer-background-color: #202023;
   --ifm-code-background: #28282c;
+
+  --ifm-link-color: #c2e7ff;
+  --ifm-link-hover-color: #94d4ff;
 
   --zeni-border: #3a3a40;
   --zeni-card-bg: #222225;
@@ -66,4 +72,9 @@
 
 .footer__copyright {
   color: var(--ifm-color-emphasis-700);
+}
+
+.main-wrapper {
+  background-image:
+    linear-gradient(180deg, var(--zeni-hero-bg), var(--ifm-background-color));
 }

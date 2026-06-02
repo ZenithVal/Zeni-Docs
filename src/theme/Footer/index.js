@@ -18,18 +18,20 @@ function FooterLink({label, href}) {
 export default function Footer() {
   const {siteConfig} = useDocusaurusContext();
   const copyright = siteConfig.themeConfig.footer?.copyright;
+  const links = Object.values(externalLinks);
 
   return (
     <footer className="footer">
       <div className="container">
         <nav className={styles.links} aria-label="External links">
-          {externalLinks.map((link, index) => (
+          {links.map((link, index) => (
             <React.Fragment key={link.label}>
               {index > 0 && <span className={styles.separator}>·</span>}
               <FooterLink {...link} />
             </React.Fragment>
           ))}
         </nav>
+
         {copyright && <div className="footer__copyright">{copyright}</div>}
       </div>
     </footer>

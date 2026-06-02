@@ -39,13 +39,8 @@ const config = {
           showReadingTime: false,
           routeBasePath: 'updates',
           path: './updates',
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          onInlineTags: 'warn',
-          onInlineAuthors: 'ignore',
-          onUntruncatedBlogPosts: 'warn',
+          blogSidebarTitle: 'Updates',
+          blogSidebarCount: 'ALL',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -61,7 +56,7 @@ const config = {
       ({
         id: 'support',
         path: './support',
-        routeBasePath: 'support-patreon',
+        routeBasePath: 'support',
         sidebarPath: './supportSidebars.ts',
         showLastUpdateAuthor: false,
         showLastUpdateTime: false,
@@ -102,6 +97,9 @@ const config = {
             label: 'Support & Patreon',
           },
         ],
+      },
+      sidebar: {
+        groupByYear: false,
       },
       footer: {
         style: 'light',

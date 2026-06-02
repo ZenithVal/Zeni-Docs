@@ -1,10 +1,23 @@
 ---
-title: Setup
+title: Download & Setup
 description: OSC Pickup Setup
 sidebar_position: 2
 tags: [vrchat, avatar-gimmicks, osc]
 ---
+import ExternalLink from '@site/src/components/ExternalLink';
 
-# Setup
+OSC Pickup is available to <ExternalLink id="patreon">Patreon</ExternalLink> supporters Shiny tier and above. (https://www.patreon.com/ZenithVal) <br/>
+You'll recieve a Zip file (OSCPickup-v#.#.#-win-x64.zip) that contains the application and a Unity package.
 
-lorum ipsum
+## Application Setup/Installation
+1. Download the latest OSCPickup.zip from <ExternalLink id="patreon">Patreon</ExternalLink> or the <ExternalLink id="discord">Discord</ExternalLink>.
+2. Extract the zip - you should have OSCPickup.exe and Config.json in the same folder
+3. (Optional) Edit the Settings to your adjust any settings/parameters you'd like.
+4. Enable OSC in VRChat: Action Menu → Options → OSC → Enable
+5. Launch SteamVR, then run OSCPickup.exe
+
+## Avatar Setup
+1. Import the unity package from the ZIP into your Avatar project.
+2. Place the prefab on the root of your model. (NOT a child of armature) Don't break prefab!
+3. Adjust the green sphere to change your grab location and hitbox.
+4. See the Parent of Sphere AttachBone to change which bone the prefab follows.

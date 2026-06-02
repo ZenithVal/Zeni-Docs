@@ -1,0 +1,112 @@
+---
+title: Configuration
+description: Configuring OSC Pickup
+sidebar_position: 3
+tags: [vrchat, avatar-gimmicks, osc]
+---
+
+After running OSC Pickup at least once, you'll find a file named `Config.json` in the same folder as the executable. <br/>
+You can edit this to change the behavior of the app. Below you can find info about what each setting does.
+
+## Config Settings
+
+### OSC
+| Value                     | Info                                                           | Default     |
+|:------------------------- | -------------------------------------------------------------- |:-----------:|
+| IP                        | Address to send/receive OSC data                               | 127.0.0.1   |
+| SendingPort               | Port to send OSC data to                                       | 9000        |
+| ListeningPort             | Port to listen for OSC data on                                 | 9001        |
+| UseOSCQuery               | Enables [OSCQuery](https://docs.vrchat.com/docs/oscquery)      | true        |
+<br/ >
+
+### Playspace
+| Value                     | Info                                                           | Default     |
+|:------------------------- | -------------------------------------------------------------- |:-----------:|
+| ResetToZero               | Returns the playspace to 0,0,0 when movement stops             | true        |
+| InvertedSpace             | Flips XZ movement. Some playspaces are flipped.                | false       |
+<br/ >
+
+### Movement
+| Value                     | Info                                                           | Default     |
+|:------------------------- | -------------------------------------------------------------- |:-----------:|
+| AccelerationSpeed         | Base multiplier for pull acceleration                          | 10          |
+| StretchCurve              | Exponent applied to stretch for exponential pull (1.0 = linear)| 1.6         |
+| MaxVelocity               | Maximum movement speed cap                                     | 12          |
+| Deadzone                  | Minimum Stretch % required to start moving                     | 0.005       |
+| Smoothing                 | Blends current and target velocity for smoother movement       | 0.1         |
+| Drag                      | Dampens overall momentum                                       | 0.6         |
+<br/ >
+
+### Locomotion Freezeing
+This is niche, and a prefab for this is not yet included in 1.0. If you have gogoloco freeze you can set that value here.
+| Value                     | Info                                                           | Default     |
+|:------------------------- | -------------------------------------------------------------- |:-----------:|
+| FreezeLocomotionEnabled   | Sends an OSC signal to freeze VRC locomotion while grabbed     | false       |
+| FreezeLocomotionParameter | The avatar parameter used to trigger the locomotion freeze     | Param |
+<br/ >
+
+### Throwing & Gravity
+| Value                     | Info                                                           | Default     |
+|:------------------------- | -------------------------------------------------------------- |:-----------:|
+| ThrowingEnabled           | Allow momentum to persist when dropped                         | false       |
+| GravityStrength           | Acceleration rate of gravity (Set to 0 to disable)             | 8.81        |
+| TerminalVelocity          | Maximum falling speed                                          | 16          |
+<br/ >
+
+### Performance/Misc
+| Value                     | Info                                                           | Default     |
+|:------------------------- | -------------------------------------------------------------- |:-----------:|
+| ActiveDelayMs             | Delay in ms between physics updates while active               | 8           |
+| InactiveDelayMs           | Delay in ms while idle                                         | 200         |
+| ExtraOutputLogs           | Enables console logging for physics and OSC output             | false       |
+<br/ >
+
+### Physbone n Contact settings.
+| Value                     | Info                                                           | Default     |
+|:------------------------- | -------------------------------------------------------------- |:-----------:|
+| PhysboneParameter         | The root parameter name for your pickup physbone               | Pickup      |
+| DirectionalParameters     | A list of contacts to use for direction calculation            | Pickup_##   |
+<br/ >
+
+---
+
+## Example JSON
+```json
+{
+    "IP": "127.0.0.1",
+    "SendingPort": 9000,
+    "ListeningPort": 9001,
+    "UseOSCQuery": true,
+
+    "ResetToZero": true,
+    "InvertedSpace": false,
+
+    "AccelerationSpeed": 10,
+    "StretchCurve": 1.6,
+    "MaxVelocity": 12,
+    "Deadzone": 0.005,
+    "Smoothing": 0.1,
+    "Drag": 0.6,
+
+    "FreezeLocomotionEnabled": false,
+    "FreezeLocomotionParameter": "FreezeLocomotion",
+
+    "ThrowingEnabled": false,
+    "GravityStrength": 9.81,
+    "TerminalVelocity": 16,
+
+    "ActiveDelayMs": 8,
+    "InactiveDelayMs": 200,
+    "ExtraOutputLogs": false,
+
+    "PhysboneParameter": "Pickup",
+    "DirectionalParameters": {
+        "Z_Positive_Param": "Pickup_Z+",
+        "Z_Negative_Param": "Pickup_Z-",
+        "X_Positive_Param": "Pickup_X+",
+        "X_Negative_Param": "Pickup_X-",
+        "Y_Positive_Param": "Pickup_Y+",
+        "Y_Negative_Param": "Pickup_Y-"
+    }
+}
+```

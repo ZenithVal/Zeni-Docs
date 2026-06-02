@@ -4,6 +4,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  border-bottom: 1px solid var(--zeni-border);
 }
 
 .heroMascot {

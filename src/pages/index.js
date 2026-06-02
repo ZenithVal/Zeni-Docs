@@ -8,7 +8,7 @@ import styles from './index.module.css';
 const sectionLinks = [
   {
     label: 'Creations',
-    to: '/creations/',
+    to: '/creations',
   },
   {
     label: 'Updates',
@@ -16,7 +16,7 @@ const sectionLinks = [
   },
   {
     label: 'Support & Patreon',
-    to: '/support-patreon/discord',
+    to: '/support',
   },
 ];
 
@@ -54,7 +54,7 @@ function SectionButtons() {
 
 export default function Home() {
   return (
-    <Layout title="Home" description="ZenithVal docs and updates.">
+    <Layout title="Home" description="ZenithVal's place for activities.">
       <HomepageHeader />
       <main>
         <SectionButtons />
