@@ -23,6 +23,7 @@
   --zeni-card-bg: #ece9e4;
   --zeni-card-bg-hover: #e2ded7;
   --zeni-hero-bg: #e6e2db;
+  --zeni-hero-text: #000000;
 
   --docusaurus-highlighted-code-line-bg: rgba(45, 45, 49, 0.08);
 }
@@ -51,6 +52,7 @@
   --zeni-card-bg: #222225;
   --zeni-card-bg-hover: #2b2b2f;
   --zeni-hero-bg: #202023;
+  --zeni-hero-text: #f0eee9;
 
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
 }

@@ -1,45 +1,64 @@
 .heroBanner {
   background: linear-gradient(180deg, var(--zeni-hero-bg), var(--ifm-background-color));
-  padding: 5rem 0 3rem;
+  padding: 1rem 0 3rem;
   text-align: center;
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid var(--zeni-border);
 }
 
+.heroBanner::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--zeni-soft-border), transparent);
+}
+
 .heroMascot {
-  width: 112px;
-  height: 112px;
+  width: 8rem;
+  height: auto;
+  flex: 0 0 auto;
+  transform: translateY(-0.15em);
   object-fit: contain;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   filter: drop-shadow(0 14px 26px rgb(32 32 36 / 0.2));
 }
 
 .heroTitle {
-  color: var(--ifm-font-color-base);
-  font-size: clamp(3rem, 8vw, 5.5rem);
-  letter-spacing: -0.06em;
+  color: var(--zeni-hero-text);
+  margin: 0;
+  font-size: clamp(4rem, 10vw, 7rem);
   line-height: 0.95;
-  margin-bottom: 0.75rem;
+  letter-spacing: -0.06em;
 }
 
 .heroSubtitle {
-  color: var(--ifm-color-emphasis-700);
-  font-size: clamp(1.25rem, 3vw, 2rem);
-  margin: 0;
+  margin: 0.75rem auto 1.35rem;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  line-height: 1.35;
+  white-space: nowrap;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.heroTitleRow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .sectionButtons {
-  padding: 2.5rem 0 4rem;
+  padding: 2rem 0 2rem;
 }
-
 .buttonGrid {
   display: flex;
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
 }
-
 .sectionButton {
   align-items: center;
   background: var(--zeni-card-bg);
@@ -62,4 +81,106 @@
   color: var(--ifm-font-color-base);
   text-decoration: none;
   transform: translateY(-1px);
+}
+
+.introCard {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid var(--zeni-border);
+  border-radius: 24px;
+  background: color-mix(in srgb, var(--ifm-background-color) 100%, transparent);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
+}
+
+.aboutText {
+  max-width: 800px;
+  margin: 0 auto 1.2rem;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.linkSection {
+  margin-top: 1.5rem;
+}
+
+.linkHeading {
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.iconGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.iconLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.85rem;
+  height: 2.85rem;
+  border: 1px solid var(--zeni-soft-border);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ifm-background-color) 92%, var(--ifm-color-emphasis-200));
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background-color 160ms ease,
+    opacity 160ms ease;
+}
+
+.iconLink:hover {
+  transform: translateY(-1px);
+  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-background-color) 78%, var(--ifm-color-emphasis-300));
+}
+
+.iconLinkMuted {
+  opacity: 0.42;
+  cursor: default;
+}
+
+.iconLinkMuted:hover {
+  transform: none;
+  border-color: var(--zeni-soft-border);
+}
+
+.socialIcon {
+  width: 1.55rem;
+  height: 1.55rem;
+  display: block;
+  object-fit: contain;
+}
+
+@media (max-width: 640px) {
+  .heroBanner {
+    padding-top: 3rem;
+  }
+
+  .heroTitleRow {
+    gap: 0.6rem;
+  }
+
+  .heroTitle {
+    font-size: clamp(3.2rem, 18vw, 5rem);
+  }
+
+  .heroMascot {
+    width: 3.5rem;
+  }
+
+  .heroSubtitle {
+    white-space: normal;
+  }
+
+  .introCard {
+    padding: 1.5rem;
+    border-radius: 18px;
+  }
 }

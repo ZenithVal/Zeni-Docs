@@ -1,23 +1,19 @@
 vrchat:
   label: VRChat
-  description: VRChat related stuff
+  description: VRChat
 
 unity:
   label: Unity
-  description: Unity related stuff
+  description: Unity
 
 osc:
-  label: OSC
-  description: OSC related stuff  
+  label: OSC Applications
+  description: OSC apps  
 
-avatar:
+gimmicks:
   label: Avatar Gimmicks
-  description: Avatar Shenanigans
+  description: Avatar gimmicks n stuff. Props or systems.
 
 clothing:
-  label: Clothing
-  description: Clothing ~ usually booth releases
-
-oscpickup:
-  label: OSC Pickup
-  description: OSC Pickup information. Updates probably.
+  label: Avatar Clothing
+  description: Avatar Clothing

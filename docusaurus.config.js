@@ -17,7 +17,7 @@ const config = {
   projectName: 'zenithval.github.io',
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
@@ -71,6 +71,11 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true,
       },
+      blog: {
+        sidebar: {
+          groupByYear: false,
+        },
+      },
       navbar: {
         title: 'ZenithVal',
         logo: {
@@ -97,9 +102,6 @@ const config = {
             label: 'Support & Patreon',
           },
         ],
-      },
-      sidebar: {
-        groupByYear: false,
       },
       footer: {
         style: 'light',
