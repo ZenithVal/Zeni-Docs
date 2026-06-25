@@ -67,7 +67,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/zeni-pin.png',
+      image: 'img/social-card.png',
       colorMode: {
         respectPrefersColorScheme: true,
       },
