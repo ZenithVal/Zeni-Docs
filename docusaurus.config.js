@@ -11,7 +11,7 @@ const config = {
     v4: true,
   },
 
-  url: 'https://docs.zenithval.com',
+  url: 'https://zenithval.com',
   baseUrl: '/',
   organizationName: 'ZenithVal',
   projectName: 'zenithval.github.io',
