@@ -87,3 +87,24 @@
   background-image:
     linear-gradient(180deg, var(--zeni-hero-bg), var(--ifm-background-color));
 }
+
+.videoEmbed {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  aspect-ratio: 16 / 9;
+  margin: 1.5rem auto;
+  overflow: hidden;
+  border: 1px solid var(--zeni-border);
+  border-radius: 18px;
+  background: var(--zeni-card-bg);
+}
+
+.videoEmbed > iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}

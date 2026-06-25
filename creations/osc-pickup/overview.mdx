@@ -17,13 +17,17 @@ This tool is not for larger scale movement/travel across worlds ~ try out [OSCLe
 - Full Body Tracking required (Sorry! :c)
 - An avatar with the OSCPickup prefab
 
-# Warnings
-- Motion sickness warning.
-- May run into issues if VRChat is running at < 20 FPS
-- This application edits your playspace to move you around so your chaperone bounds may become inaccurate.
-  - If you don't have [OVRAS](https://store.steampowered.com/app/1009850/OVR_Advanced_Settings) you shouldn't disable ResetToZero.
-- Still actively in production. Some lingering issues I need to work on.    
+# Known issues
+- Poor grab accuracy if FPS is Low (< 20 FPS)
+- Incompatible with OVR Advanced Settings > 5.7.4.
+- Incompatible with other playspace movers.
+  - IF you have OVRAS on Steam, you can right click it, go to properties, and select the "Betas" tab. 
+  - From there you can select the 5.7.4 to downgrade.
+- Currently the chaperone is not counter offset. Your chaperone bounds **WILL** become inaccurate while using. 
+- Some playspaces are inverted(?) Havn't narrowed down the cause for this but 
+  - If you're always flying off, you can set `InvertedSpace` to true in the config.
 
 Heavily recommended you also have OVR Advanced settings to backup reset your playspace offsets! <br/>
 https://store.steampowered.com/app/1009850/OVR_Advanced_Settings
 
+Support Discord: https://discord.gg/Dpzkz4j4WW
